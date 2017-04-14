@@ -38,6 +38,11 @@ Put this script before any other scripts
 <script src="node_modules/nw-dev/lib/dev.js"></script>
 ```
 
+Aternatively add
+```json
+"inject_js_start" : "dev.js"
+```
+to package.json
 
 ## exclude some files from being watched
 

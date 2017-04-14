@@ -31,9 +31,9 @@
     "prepublish": "coffee -o lib/ -c src/"
   },
   "devDependencies": {
-    "coffee-script": "^1.10.0"
+    "coffee-script": "^1.12.5"
   },
   "dependencies": {
-    "chokidar": "^1.4.3"
+    "chokidar": "^1.6.1"
   }
 }

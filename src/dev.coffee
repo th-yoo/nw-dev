@@ -25,7 +25,11 @@ if process?
 				window.location.reload()
 	
 	ignored = [/node_modules|npm-debug\.log|\.git|\.hg|\.svn/]
-	ignore = document.currentScript.dataset.ignore
+	if document.currentScript
+		ignore = document.currentScript.dataset.ignore
+	else
+		ignore = nwgui.App.manifest.nwDevIgnore
+	
 	ignored.push ignore if ignore
 	
 	# Live reload
